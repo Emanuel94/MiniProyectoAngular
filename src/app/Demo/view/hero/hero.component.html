@@ -1,0 +1,14 @@
+<div class="ui centered link cards">
+    <div *ngFor="let i of heros" class="card">
+        <div class="ui image">
+          <img class="imgSize " src="{{ i.imagen }}" />
+        </div>
+        <div class="content">
+          <div class="posicion ">{{ i.nombre | titlecase }}</div>
+          <!-- pipes -->
+          <div  class="posicion">
+            {{ i.profesion }}
+          </div>
+        </div>
+    </div>
+  </div>
